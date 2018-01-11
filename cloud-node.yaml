@@ -5,7 +5,7 @@
 hostname: node01
 users:
   - name: core
-    passwd: $6$rounds=4096$qTfXAnCBjkQ326$zRFWfe45s3quKvxl2pax1Ml44PCPNQQYXcJ.r0FfkN5jwecdipepTLMNEQCsAcGJkH5NA6BCPr4VIGJNftBIe.
+    passwd: $1$nYCrKhct$NypBB.V.OHFKbNq7Y4Gdi. 
     groups:
       - sudo
       - docker
