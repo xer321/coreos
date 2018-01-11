@@ -46,9 +46,11 @@ coreos:
 
         [Network]
         Address=192.168.56.100/24
-
+        DNS=8.8.8.8
+        
         [Route]
-        Gateway=192.168.122.1
+        Gateway=192.168.56.1
+
         Scope=link
     - name: generate-serviceaccount-key.service
       command: start
