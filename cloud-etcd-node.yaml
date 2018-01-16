@@ -1,9 +1,6 @@
-<<<<<<< HEAD
 #cloud-config
 #type: node
 
-=======
->>>>>>> 5623f4e33ea8dba29eb089f304a7c038dcc94e5a
 ---
 hostname: node01
 users:
