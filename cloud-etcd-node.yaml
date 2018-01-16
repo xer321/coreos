@@ -14,6 +14,7 @@ ssh-authorized-keys:
 
 coreos:
   etcd2:
+    name: node
     listen-client-urls: http://0.0.0.0:2379,http://0.0.0.0:4001
     advertise-client-urls: http://0.0.0.0:2379,http://0.0.0.0:4001
     initial-cluster: master=http://192.168.56.100:2380
