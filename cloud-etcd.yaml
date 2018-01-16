@@ -28,7 +28,7 @@ coreos:
     - name: static.network
       content: |
         [Match]
-        Name=enp0s8
+        Name=enp0s3
 
         [Network]
         Address=192.168.56.100/24
@@ -39,6 +39,6 @@ coreos:
         Gateway=192.168.56.1
 
         Scope=link
-        
+
     - name: fleet.service
       command: start
