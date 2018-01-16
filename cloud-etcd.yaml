@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 #cloud-config
 
+=======
+>>>>>>> 5623f4e33ea8dba29eb089f304a7c038dcc94e5a
 ---
 hostname: master01
 users:
@@ -10,6 +13,8 @@ users:
       - docker
 ssh-authorized-keys:
   - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDj/Pw3uDI3KXnLsBl1gHoHeGMKIdsmtM6amWNIQaQTehdj9d94BvRGinR1GSazDWsRtPYlLU4Jrodztn53WO70XU+2p34atA6tVtzeBsvqzjFKKzSgc6KyVXo75ZTpTVZJDS+zYimw5Tbro4KeDM2DSOx/My5ASRCGUFBdxvVQ2zGTZHmToSBhzms0PqiQb0TdhlOIiNG7ors45DbRi5ehYBKxfRvUVpc5/DdhURx9K2hlmwyT8BL+/+yez9smdPxQADK7P/wOwEG9Sj0Ew23uaNVji2XaCwcr7tUloCiq6Bjnl1JIqzUZ7rkydAJRL1dFvtBPRlV7wWS1eDC/jKmJ
+
+
 
 coreos:
   etcd2:
