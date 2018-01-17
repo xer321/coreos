@@ -14,7 +14,7 @@ ssh-authorized-keys:
 
 coreos:
   etcd2:
-    name: master01
+    name: node01
     initial-advertise-peer-urls: http://192.168.56.101:2380
     initial-cluster-token: core-01_etcd
     initial-cluster: master01=http://192.168.56.100:2380,node01=http://192.168.56.101:2380
