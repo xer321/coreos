@@ -15,13 +15,13 @@ ssh-authorized-keys:
 coreos:
   etcd2:
     name: master01
-    initial-advertise-peer-urls: http://127.0.0.1:2380
+    initial-advertise-peer-urls: http://192.168.56.100:2380
     initial-cluster-token: core-01_etcd
     initial-cluster: master01=http://192.168.56.100:2380,node01=http://192.168.56.101:2380
     initial-cluster-state: new
-    listen-peer-urls: http://0.0.0.0:2380,http://0.0.0.0:7001
-    listen-client-urls: http://0.0.0.0:2379,http://0.0.0.0:4001
-    advertise-client-urls:  http://0.0.0.0:2379,http://0.0.0.0:4001
+    listen-peer-urls: http://192.168.56.100:2380
+    listen-client-urls: http://192.168.56.100:2379,http://127.0.0.1:2379
+    advertise-client-urls:  http://192.168.56.100:2379
   fleet:
     metadata: "role=master"
   units:
@@ -36,7 +36,7 @@ coreos:
         Gateway=192.168.56.1
 
         [Route]
-
+        Gateway=192.168.56.1
         Scope=link
         
     - name: fleet.service
