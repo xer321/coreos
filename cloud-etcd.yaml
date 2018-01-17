@@ -13,14 +13,15 @@ ssh-authorized-keys:
   - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDj/Pw3uDI3KXnLsBl1gHoHeGMKIdsmtM6amWNIQaQTehdj9d94BvRGinR1GSazDWsRtPYlLU4Jrodztn53WO70XU+2p34atA6tVtzeBsvqzjFKKzSgc6KyVXo75ZTpTVZJDS+zYimw5Tbro4KeDM2DSOx/My5ASRCGUFBdxvVQ2zGTZHmToSBhzms0PqiQb0TdhlOIiNG7ors45DbRi5ehYBKxfRvUVpc5/DdhURx9K2hlmwyT8BL+/+yez9smdPxQADK7P/wOwEG9Sj0Ew23uaNVji2XaCwcr7tUloCiq6Bjnl1JIqzUZ7rkydAJRL1dFvtBPRlV7wWS1eDC/jKmJ
 
 coreos:
-  etcd2:
+  etcd:
+    version: 3.0.15
     name: master01
     initial-cluster-token: etcd-cluster-1
     initial-cluster-state: new
     initial-advertise-peer-urls: http://192.168.56.100:2380
     initial-cluster: master01=http://192.168.56.100:2380,node01=http://192.168.56.101:2380,node02=http://192.168.56.102:2380
     listen-peer-urls: http://192.168.56.100:2380
-    listen-client-urls: http://192.168.56.100:2379,http://127.0.0.1:2379
+    listen-client-urls: http://0.0.0.0:2379
     advertise-client-urls: http://192.168.56.100:2379
   fleet:
     metadata: "role=master"
